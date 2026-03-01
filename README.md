@@ -21,7 +21,7 @@ Instead of numbers, the game uses logic gates (AND, OR, XOR) that merge and leve
 ## 🚀 Live Demo
 
 Deployed on Render:  
-👉 https://your-render-link.onrender.com
+https://neutral-gride-game.onrender.com/
 
 ---
 
