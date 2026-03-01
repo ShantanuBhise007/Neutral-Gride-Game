@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neural Grid</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>🧠 Neural Grid</h1>
+
+{% if win %}
+    <h2 class="win">You Win! 🎉</h2>
+{% elif game_over %}
+    <h2 class="lose">Game Over 💀</h2>
+{% endif %}
+
+<div class="grid">
+    {% for row in grid %}
+        {% for cell in row %}
+            <div class="cell">
+                {% if cell %}
+                    {{ cell.gate_type }}-{{ cell.level }}
+                {% endif %}
+            </div>
+        {% endfor %}
+    {% endfor %}
+</div>
+
+<form method="POST">
+    <button name="move" value="up">Up</button>
+    <button name="move" value="left">Left</button>
+    <button name="move" value="down">Down</button>
+    <button name="move" value="right">Right</button>
+</form>
+
+</body>
+</html>
